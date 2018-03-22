@@ -4,6 +4,8 @@
 <pre>
 ogr2ogr -f &lt;format&gt; &lt;output&gt; &lt;input&gt;
 
+ogr2ogr -f GeoJSON counties.json build/cb_2014__us_county_20m.shp
+
 ogr2ogr -f GeoJSON -where "gu_a3 = 'USA'" states.json ne_10m_admin_0_countries_lakes.shp
 
 geo2topo --id-property adm1_cod_1 -p name -o states_usa.topo.json states_usa.json
